@@ -5,6 +5,7 @@ RoamingRover::Application.routes.draw do
   #Render homepage
   root 'greeting#index'
 
+
   #Render first signup process
   get 'signup/' => 'signup#signup_type'
 

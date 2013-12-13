@@ -118,6 +118,7 @@ DEPENDENCIES
   font-awesome-rails
   jbuilder (~> 1.2)
   jquery-rails
+  minitest (~> 4.7)
   rails (= 4.0.0)
   sdoc
   sqlite3

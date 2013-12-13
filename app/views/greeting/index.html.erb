@@ -1,5 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Roaming Rover: Walking Pooches!</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"></meta>
+ 
+  <style type="text/css">
+	.row-white .col-md-4,
+	.row-white .col-md-6,
+	.row-white .col-md-8 {
+	  background-color: #ffffff;
+	  border: 0px;
+	  padding: 0px;	
+	}
+	.row-social .col-md-4 {
+	  background-color: #ffffff;	
+	  border: 0px;
+	  padding-top: 0px;
+	  padding-bottom: 0px;
+	}
+	.socialbutton {
+	  	padding-left: 15px;
+		padding-right: 15px;
+	}
+    div.jumbotron {
+      position: relative;
+      margin: 60px 0;
+      text-align: left;
+      padding-bottom: 5px;
+      background-image: url(<%= asset_path 'shibe.jpg' %>);
+      background-size: 100% 100%;
+     }
+     body {
+          padding-top: 0px;
+          padding-bottom: 0px;         
+         }
+         .container-narrow {
+           margin: 0 auto;
+           max-width: auto;
+	   height: 320px;  
+         }
+         .container-narrow > hr {
+           margin: 30px 0; 
+         }
+         .jumbotron h1 {
+           font-size: 72px;
+           line-height: 1; 
+         }
+         .jumbotron .btn {
+           font-size: 21px;
+           padding: 14px 24px; 
+         }
+  </style>
+</head>
 <body>
+<div class="container">
+<div class="row-white">
+  <div class="col-md-8">
+  <h3>Roaming Rover</h3>
+  </div> <!-- col-md-8 -->
+  <div class="col-md-4">
+    <div id="mainNav"
+      <ul class="nav nav-pills pulls right">
+        <li class="active">
+        <a href="#">Home</a>   
+        </li>
+        <li>
+        <a href="#about">About</a>
+        </li>
+        <li>
+        <a href="#contact">Contact</a>
+        </li>
+      </ul>
+     </div> <!-- mainNav -->
+  </div> <!-- col-md-4 -->
+  </div> <!-- row-white -->
+  <div class="row-social">
+    <div class="col-md-4 col-md-offset4">
+      <a href="#www.facebook.com/RoamingRover">
+        <img src="<%= asset_path "/assets/facebook-button.jpg" %>" alt="Facebook">
+      </a> 
+      <a href="#www.twitter.com/RoamingRover">
+        <img src=<%= asset_path "/assets/twitter-button.jpg" %> alt="Twitter">
+      </a>  
+      <a href="#www.rss.com/RoamingRover">
+        <img src=<%= asset_path "assets/rss-button.jpg" %> alt="RSS">
+      </a>
+    </div>
+  </div> <!-- row-white -->
+</div> <!-- container -->
+<div class="container">
+<hr></hr>
+  <div class="jumbotron">
+    <div class="container-narrow">
+      <h2>Exercise for dogs!</h2>
+      <p>Finding a dog walker has never been easier!</p>
+      <p>
+        <%= link_to "Get Walking!", signup_path(@signup), :class => "btn btn-primary btn-lg", :role => "button" %>
+      </p>
+    </div> <!-- container for jumbotron -->
+  </div> <!-- jumbotron -->
 
-<h1>This will be our new homepage</h1>
-
+  <hr></hr>
+  <div class="row-white">
+    <div class="col-md-6">
+      <h4>Dog Walkers: Get jobs easier!</h4>
+      <p>
+      Are you all ready for this up in here? This is what happens when some tech people decide they like dogs and want somebody else to pick up their poo--that's right, now it's super easy for dog walkers to find dogs to walk. The breeds they want, the locations they want to walk around, and the rates that they want to be paid are all just a few clicks away.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <h4>Dog Lovers: Get that pooch in shape!</h4>
+      <p>
+      Hey, it's tough to find time in your busy life to take that adorable furry thing out for a walk. Sometimes it's too cold to go out, sometimes you just don't have the energy. That's what we do--Roaming Rover connects you with the the best dog walkers for your breed and in your area. They can be ready at a moments notice so your pooch never gets to be a couch potato again!
+      </p>
+    </div>
+  </div> <!-- row-fluid marketing -->
+</div> <!-- container-narrow first in body -->
 </body>
+</html>
