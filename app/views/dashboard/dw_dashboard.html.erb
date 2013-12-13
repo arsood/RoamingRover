@@ -120,7 +120,7 @@
                                     	<strong><%= client_info.first_name %></strong>
                                     </div>
                                     <div>
-                                    	<small>Requested on <%= (listing.created_at).in_time_zone("America/Los_Angeles").to_formatted_s(:long_ordinal) %></small>
+                                    	<small>Requested on <%= (listing.created_at).strftime("%B %d, %Y %-I:%M %p") %></small>
                                     </div>
                                 </div>
                             </div>
