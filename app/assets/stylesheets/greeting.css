@@ -3,7 +3,51 @@
   They will automatically be included in application.css.
 */
 
-h1 {
-    font-size:3em;
-    font-style:italic;
+.row-white .col-md-4,
+.row-white .col-md-6,
+.row-white .col-md-8 {
+  background-color: #ffffff;
+  border: 0px;
+  padding: 10px;
+}
+
+.row-social .col-md-4 {
+  background-color: #ffffff;
+  border: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.container-narrow {
+  margin: 0 auto;
+  max-width: auto;
+  height: 320px;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.jumbotron h1 {
+  font-size: 72px;
+  line-height: 1;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+div.jumbotron {
+  position: relative;
+  margin: 60px 0;
+  text-align: left;
+  padding-bottom: 5px;
+  background-size: 100% 100%;
+  background: url("/assets/shibe.jpg");
+}
+
+body {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }

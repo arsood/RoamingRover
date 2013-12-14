@@ -3,54 +3,6 @@
 <head>
   <title>Roaming Rover: Walking Pooches!</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"></meta>
- 
-  <style type="text/css">
-	.row-white .col-md-4,
-	.row-white .col-md-6,
-	.row-white .col-md-8 {
-	  background-color: #ffffff;
-	  border: 0px;
-	  padding: 0px;	
-	}
-	.row-social .col-md-4 {
-	  background-color: #ffffff;	
-	  border: 0px;
-	  padding-top: 0px;
-	  padding-bottom: 0px;
-	}
-	.socialbutton {
-	  	padding-left: 15px;
-		padding-right: 15px;
-	}
-    div.jumbotron {
-      position: relative;
-      margin: 60px 0;
-      text-align: left;
-      padding-bottom: 5px;
-      background-image: url(<%= asset_path 'shibe.jpg' %>);
-      background-size: 100% 100%;
-     }
-     body {
-          padding-top: 0px;
-          padding-bottom: 0px;         
-         }
-         .container-narrow {
-           margin: 0 auto;
-           max-width: auto;
-	   height: 320px;  
-         }
-         .container-narrow > hr {
-           margin: 30px 0; 
-         }
-         .jumbotron h1 {
-           font-size: 72px;
-           line-height: 1; 
-         }
-         .jumbotron .btn {
-           font-size: 21px;
-           padding: 14px 24px; 
-         }
-  </style>
 </head>
 <body>
 <div class="container">
@@ -75,18 +27,31 @@
   </div> <!-- col-md-4 -->
   </div> <!-- row-white -->
   <div class="row-social">
-    <div class="col-md-4 col-md-offset4">
-      <a href="https://www.facebook.com/roamingrovernow?ref=hl">
-        <img src="<%= asset_path "/assets/facebook-button.jpg" %>" alt="Facebook">
-      </a> 
-      <a href="#www.twitter.com/RoamingRover">
-        <img src=<%= asset_path "/assets/twitter-button.jpg" %> alt="Twitter">
-      </a>  
-      <a href="#www.rss.com/RoamingRover">
-        <img src=<%= asset_path "assets/rss-button.jpg" %> alt="RSS">
-      </a>
+    <div class "col-md-4 col-md-offset4">
+    <div class="col-md-1 col-md-offset1">
+      <div class="container">
+        <a href="https://www.facebook.com/roamingrovernow?ref=hl">
+          <img src="<%= asset_path "/assets/facebook-button.jpg" %>" alt="Facebook">
+        </a>
+      </div>
     </div>
-  </div> <!-- row-white -->
+    <div class="col-md-1 col-md-offset1">
+      <div class="container"> 
+        <a href="#www.twitter.com/RoamingRover">
+          <img src=<%= asset_path "/assets/twitter-button.jpg" %> alt="Twitter">
+        </a>  
+      </div>
+    </div>
+    <div class="col-md-1 col-md-offset1">
+      <div class="container">
+        <a href="#www.rss.com/RoamingRover">
+          <img src=<%= asset_path "assets/rss-button.jpg" %> alt="RSS">
+        </a>
+      </div>
+    </div>
+    </div>
+    </div> <!-- col-md-4 -->
+  </div> <!-- row-social -->
 </div> <!-- container -->
 <div class="container">
 <hr></hr>
