@@ -59,6 +59,16 @@ class DashboardController < ApplicationController
 
 		new_prop.walker_id = session[:user_id]
 		new_prop.bid_id = params[:proposalId]
+		
+		#Assign the activity_id to the walkerbid
+
+		new_prop.activities_id = params[:proposalId]
+
+
+		#Assign the bid_id to the activity
+
+		params[:proposalId] = new_prop.bid_id
+		params[:proposalId].save
 
 		#Save it up
 
