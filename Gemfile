@@ -37,6 +37,9 @@ end
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
 
+# Use Stripe for Checkout in Rails.
+gem 'stripe'
+
 # Setting the Minitest Dependency to 4.7
 group :test do
   gem "minitest", "~> 4.7"

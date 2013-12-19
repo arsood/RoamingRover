@@ -29,10 +29,10 @@ class ActivitiesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get edit" do
-    get :edit, id: @activity
-    assert_response :success
-  end
+  # test "should get edit" do
+  #   get :edit, id: @activity
+  #   assert_response :success
+  # end
 
   test "should update activity" do
     patch :update, id: @activity, activity: { client_id: @activity.client_id, date: @activity.date, description: @activity.description, rate: @activity.rate, status: @activity.status, time: @activity.time, title: @activity.title }
