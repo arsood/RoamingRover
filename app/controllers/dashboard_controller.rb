@@ -59,17 +59,16 @@ class DashboardController < ApplicationController
 
 		new_prop.walker_id = session[:user_id]
 		new_prop.bid_id = params[:proposalId]
-		
-		#Assign the activity_id to the walkerbid
-
-		new_prop.activities_id = params[:proposalId]
-
 
 		#Assign the bid_id to the activity
 		
-		activity_id_listed = Activity.where(id: params[:proposalId]).first.id
-		activity_id_listed = new_prop.bid_id
+		activity_id_listed = Activity.where(params[:proposalId]).first.id
+		activity_id_listed = new_prop
 		activity_id_listed.save
+
+		#Assign activities_id to bid
+
+		new_prop.set_activities_id(activity_id_listed.id)
 
 		#Save it up
 
@@ -77,8 +76,7 @@ class DashboardController < ApplicationController
 
 		#Get client ID
 
-		client_id_listed = Activity.where(id: params[:proposalId]).first.client_id
-
+		client_id_listed = Activity.where(params[:proposalId]).first.get_client_id
 		#Set up walker information provided in email
 
 		given_name = session[:first_name] + " " + session[:last_name]
