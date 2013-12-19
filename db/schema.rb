@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20131219034932) do
+=======
 ActiveRecord::Schema.define(version: 20131212041035) do
+>>>>>>> 9abd852e70e445a3f81cb6b98eb9baca984d2f5e
 
   create_table "activities", force: true do |t|
     t.string   "title"
@@ -23,6 +27,11 @@ ActiveRecord::Schema.define(version: 20131212041035) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "date"
+<<<<<<< HEAD
+    t.integer  "zipcode"
+    t.integer  "bid_id"
+=======
+>>>>>>> 9abd852e70e445a3f81cb6b98eb9baca984d2f5e
   end
 
   create_table "clients", force: true do |t|
@@ -30,6 +39,10 @@ ActiveRecord::Schema.define(version: 20131212041035) do
     t.datetime "updated_at"
     t.string   "dogsize"
     t.integer  "user_id"
+<<<<<<< HEAD
+    t.integer  "activities_id"
+=======
+>>>>>>> 9abd852e70e445a3f81cb6b98eb9baca984d2f5e
   end
 
   create_table "dog_walkers", force: true do |t|
@@ -61,6 +74,10 @@ ActiveRecord::Schema.define(version: 20131212041035) do
     t.integer  "bid_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+<<<<<<< HEAD
+    t.integer  "activities_id"
+=======
+>>>>>>> 9abd852e70e445a3f81cb6b98eb9baca984d2f5e
   end
 
 end
