@@ -1,6 +1,7 @@
 RoamingRover::Application.routes.draw do
 
   resources :activities
+  resources :charges
 
   #Render homepage
   root 'greeting#index'
