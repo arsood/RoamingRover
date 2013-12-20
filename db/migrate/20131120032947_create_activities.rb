@@ -8,7 +8,6 @@ class CreateActivities < ActiveRecord::Migration
       t.date :date
       t.time :time
       t.string :status
-      t.integer :bid_id
       t.timestamps
     end
   end

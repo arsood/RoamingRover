@@ -53,19 +53,48 @@
     </div> <!-- col-md-4 -->
   </div> <!-- row-social -->
 </div> <!-- container -->
-<div class="container">
-<hr></hr>
-  <div class="jumbotron">
-    <div class="container-narrow">
-      <h2>Exercise for dogs!</h2>
-      <p>Finding a dog walker has never been easier!</p>
-      <p>
-        <%= link_to "Get Walking!", signup_path(@signup), :class => "btn btn-primary btn-lg", :role => "button" %>
-      </p>
-    </div> <!-- container for jumbotron -->
-  </div> <!-- jumbotron -->
 
-  <hr></hr>
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="carousel" data-slide-to="0" class="active"></li>
+        <li data-target="carousel" data-slide-to="1"></li>
+        <li data-target="carousel" data-slide-to="2"></li>
+      </ol>
+      
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="<%= asset_path "/assets/shibe.jpg" %>" alt="">
+            <div class="carousel-caption">
+              Dog walkers, right now
+            </div>
+        </div>
+        
+        <div class="item">
+          <img src="" alt="">
+            <div class="carousel-caption">
+              Dog walkers, right now
+            </div>
+        </div>
+        
+        <div class="item">
+          <img src= "" alt="">
+            <div class="carousel-caption">
+              Dog walkers, right now
+            </div>
+        </div>
+      </div>
+      
+      <!-- controls -->
+      <a class="left-carousel-control" href="#carousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right-carousel-control" href="#carousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+      
+    </div> <!-- carousel -->
+
+
   <div class="row-white">
     <div class="col-md-6">
       <h4>Dog Walkers: Get jobs easier!</h4>
@@ -83,3 +112,4 @@
 </div> <!-- container-narrow first in body -->
 </body>
 </html>
+
