@@ -62,13 +62,13 @@ class DashboardController < ApplicationController
 
 		#Assign the bid_id to the activity
 		
-		activity_id_listed = Activity.where(params[:proposalId]).first.id
-		activity_id_listed = new_prop
-		activity_id_listed.save
+		#activity_id_listed = Activity.where(params[:proposalId]).first.id
+		#activity_id_listed = new_prop
+		#activity_id_listed.save
 
 		#Assign activities_id to bid
 
-		new_prop.set_activities_id(activity_id_listed.id)
+		#new_prop.set_activities_id(activity_id_listed.id)
 
 		#Save it up
 
