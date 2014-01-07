@@ -76,7 +76,7 @@ class DashboardController < ApplicationController
 
 		#Get client ID
 
-		client_id_listed = Activity.where(id: params[:proposalId]).first.get_client_id
+		client_id_listed = Activity.where(client_id: params[:proposalId]).first.client_id
 
 		#Set up walker information provided in email
 
